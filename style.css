@@ -12,6 +12,37 @@ body {
     /* height: 400vh; */
 }
 
+.product-name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.normal-text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.semi-title {
+    color: white;
+    font-size: 36px;
+    margin: 15px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #492C26;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -19,9 +50,6 @@ body {
     height: 100px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) -95.83%, rgba(0, 0, 0, 0) 100.83%);
     padding: 0 40px;
-    font-weight: 600;
-    font-size: 32px;
-    color: #492C26;
 }
 
 .page-selector {
@@ -45,7 +73,7 @@ body {
     height: 540px;
     width: 976px;
     padding: 20px 160px;
-    padding-right: 400px;
+    padding-bottom: 140px;
 }
 
 .tee>div>img {
@@ -60,7 +88,6 @@ body {
     width: 400px;
     height: 100%;
     padding: 20px 90px;
-    color: white;
 }
 
 .bundle>p {
@@ -95,19 +122,35 @@ body {
 
 .section {
     position: absolute;
-    top: 750px;
+    top: 930px;
     background: #FAFAFA;
     height: 700px;
-    width: 200vw;
+    width: 400vw;
     box-shadow: inset 0px 0px 47px rgba(0, 0, 0, 0.35);
-    transform: translateX(-500px) rotate(-10.8deg);
+    transform: translateX(-50%) rotate(-10.8deg);
     z-index: -1;
 }
 
+.left-oriented {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
 .right-oriented {
-    padding: 140px;
+    /* padding: 140px;
     padding-left: 400px;
-    padding-bottom: 0;
+    padding-bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #492C26;
+}
+
+.right-oriented>.tee {
+    padding-bottom: 40px;
+    flex-direction: row-reverse;
 }
 
 .right-oriented>.bundle {
@@ -149,17 +192,6 @@ body {
     width: 500px;
     height: 306px;
     padding: 100px;
-    text-align: justify;
-    text-justify: inter-word;
-    color: white;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-}
-
-.semi-title {
-    font-size: 36px;
-    margin: 15px;
 }
 
 .social {
@@ -208,14 +240,14 @@ body {
     padding: 10px 0;
 }
 
-.links>div{
+.links>div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 0;
 }
 
-.links>div>p{
+.links>div>p {
     margin: 5px 10px;
     padding: 1px 0;
 }
@@ -272,4 +304,104 @@ body {
     transform-origin: bottom left;
 }
 
-/* Rectangle 4 */
+/* portable */
+
+@media screen and (max-width: 600px) {
+    .tee {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 170px;
+    }
+
+    .right-oriented>.tee {
+        flex-direction: column;
+        padding: 0;
+        /* padding-bottom: 50px; */
+    }
+
+    .view-more {
+        padding: 0 20px;
+    }
+
+    .view-more>p {
+        margin: 0;
+        margin-bottom: 160px;
+    }
+
+    .about {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .info {
+        width: 300px;
+    }
+
+    .social {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .social>div {
+        width: 300px;
+    }
+
+    .follow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .follow>p {
+        margin: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .section {
+        top: 800px;
+    }
+
+    .sitemap {
+        padding: 0 20px;
+    }
+
+    .bundle {
+        padding: 0 20px;
+        width: auto;
+    }
+
+    .main-image>img {
+        width: 330px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .top-nav {
+        padding: 0 20px;
+    }
+
+    .brand-name>p {
+        margin: auto 20px;
+    }
+}
