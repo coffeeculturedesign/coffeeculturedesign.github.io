@@ -407,3 +407,14 @@ body {
         margin: auto 20px;
     }
 }
+
+@media screen and (min-width: 1650px) {
+    .tee {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width: 2200px) {
+    .tee {
+        padding-bottom: 0px;
+    }
+}
