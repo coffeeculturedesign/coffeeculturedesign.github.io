@@ -9,23 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffe Culture</title>
     <script>
-        let ps = document.getElementById('page-selector');
-
         document.addEventListener('DOMContentLoaded', function () {
             let ps = document.getElementById('page-selector');
             let cm = document.getElementById('close-menu');
 
-            function toggleMenu() {
-                ps.style.display = (ps.style.display !== "flex" ? "flex" : "none");
-                cm.style.display = (cm.style.display !== "block" ? "block" : "none");
-                document.body.style.overflowY = (document.body.style.overflowY !== "hidden" ? "hidden" : "scroll");
-                document.body.style.height = (document.body.style.height !== "100vh" ? "100vh" : "unset");
+            function showMenu() {
+                ps.style.display = "flex";
+                ps.classList.remove('hide');
+                ps.classList.add('show');
+                cm.style.display = "block";
+                document.body.style.overflowY = "hidden";
+                document.body.style.height = "100vh";
             }
 
-            document.querySelector('.menu').addEventListener('click', toggleMenu);
-            document.querySelector('.close-menu').addEventListener('click', toggleMenu);
-        });
+            function hideMenu() {
+                ps.classList.remove('show');
+                cm.style.display = "none";
+                document.body.style.overflowY = "scroll";
+                document.body.style.height = "unset";
+                ps.classList.add('hide');
 
+                ps.addEventListener('animationend', function hideOnAnimationEnd() {
+                    ps.style.display = "none";
+                    ps.removeEventListener('animationend', hideOnAnimationEnd);
+                }, { once: true });
+            }
+
+            document.querySelector('.menu').addEventListener('click', function () {
+                if (ps.classList.contains('show')) {
+                    hideMenu();
+                } else {
+                    showMenu();
+                }
+            });
+
+            document.querySelector('.close-menu').addEventListener('click', hideMenu);
+        });
     </script>
 </head>
 

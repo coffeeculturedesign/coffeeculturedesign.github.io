@@ -435,7 +435,7 @@ body {
         height: 100vh;
         width: 100vw;
         background: #9797978d;
-        -webkit-backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
     }
 
@@ -482,4 +482,36 @@ body {
     .tee {
         padding-bottom: 0px;
     }
+}
+
+@keyframes fadein {
+    0% {
+        background: #97979700;
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        background: #9797978d;
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+    }
+}
+@keyframes fadeout {
+    0% {
+        background: #9797978d;
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+    }
+    100% {
+        background: #97979700;
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+}
+
+.hide{
+    animation: fadeout .75s;
+}
+.show{
+    animation: fadein .75s;
 }
