@@ -8,6 +8,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffe Culture</title>
+    <script>
+        let ps = document.getElementById('page-selector');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let ps = document.getElementById('page-selector');
+            let cm = document.getElementById('close-menu');
+
+            function toggleMenu() {
+                ps.style.display = (ps.style.display !== "flex" ? "flex" : "none");
+                cm.style.display = (cm.style.display !== "block" ? "block" : "none");
+                document.body.style.overflowY = (document.body.style.overflowY !== "hidden" ? "hidden" : "scroll");
+                document.body.style.height = (document.body.style.height !== "100vh" ? "100vh" : "unset");
+            }
+
+            document.querySelector('.menu').addEventListener('click', toggleMenu);
+            document.querySelector('.close-menu').addEventListener('click', toggleMenu);
+        });
+
+    </script>
 </head>
 
 <body>
@@ -15,7 +34,28 @@
         <div class="brand-name">
             <p class="title" onclick="location.replace('./')" style="cursor: pointer;">Coffe Culture</p>
         </div>
-        <div class="page-selector">
+        <div class="close-menu" id="close-menu">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00098 5L19 18.9991" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M5.00009 18.9991L18.9991 5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="menu">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
+                    fill="#292D32" />
+                <path
+                    d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
+                    fill="#292D32" />
+                <path
+                    d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
+                    fill="#292D32" />
+            </svg>
+        </div>
+        <div class="page-selector" id="page-selector">
             <p class="title" onclick="location.replace('./')">Home</p>
             <p class="title">Store</p>
         </div>
@@ -25,7 +65,7 @@
     <div class="left-oriented">
         <div class="tee">
             <div class="main-image">
-                <img src="../images/cappucino-front.png" width="450px">
+                <img src="../images/cappucino-front.png" width="450px" id="cappuccino">
             </div>
             <div class="bundle">
                 <p class="product-name">Cappucino Tee</p>
@@ -49,7 +89,7 @@
     <div class="right-oriented">
         <div class="tee" id="second-featured">
             <div class="main-image">
-                <img src="../images/macchiato-front.png" width="450px">
+                <img src="../images/macchiato-front.png" width="450px" id="macchiato">
             </div>
             <div class="bundle">
                 <p class="product-name">Macchiato Tee</p>

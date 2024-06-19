@@ -12,6 +12,10 @@ body {
     width: 100vw;
     /* height: 400vh; */
 }
+ path{
+    stroke: #492C26;
+    fill: #492C26;
+}
 
 .product-name {
     font-size: 26px;
@@ -53,6 +57,14 @@ body {
     padding: 0 40px;
 }
 
+.menu {
+    padding: 0 25px;
+    display: none;
+}
+.close-menu {
+    display: none;
+}
+
 .page-selector {
     display: flex;
     justify-content: space-between;
@@ -79,6 +91,14 @@ body {
 
 .tee>div>img {
     filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+}
+
+#cappuccino:hover {
+    content: url("./images/cappucino-back-us.png");
+}
+
+#macchiato:hover {
+    content: url("./images/macchiato-back-us.png");
 }
 
 .bundle {
@@ -400,11 +420,55 @@ body {
     }
 
     .top-nav {
-        padding: 0 20px;
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
+    .page-selector {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background: #9797978d;
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(24px);
+    }
+
+    .page-selector>p {
+        text-shadow: 0px 0px 6px #492c267e;
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .page-selector p:last-child{
+        margin-bottom: 240px;
     }
 
     .brand-name>p {
         margin: auto 20px;
+    }
+
+    #cappuccino:hover {
+        content: inherit;
+    }
+
+    #macchiato:hover {
+        content: inherit;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .close-menu{
+        position: absolute;
+        z-index: 6;
+        right: 32px;
+        top: 32px;
     }
 }
 
@@ -413,6 +477,7 @@ body {
         padding-bottom: 40px;
     }
 }
+
 @media screen and (min-width: 2200px) {
     .tee {
         padding-bottom: 0px;
