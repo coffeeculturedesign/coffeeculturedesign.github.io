@@ -501,16 +501,23 @@ body {
         background: #9797978d;
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
+        /* opacity: 100%; */
     }
     100% {
         background: #97979700;
         -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
+        /* opacity: 0%; */
     }
 }
 
 .hide{
     animation: fadeout .75s;
+}
+.hide>p{
+    transition: .75s;
+    color: #492c2600;
+    text-shadow: 0px 0px 6px #492c2600;
 }
 .show{
     animation: fadein .75s;
