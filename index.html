@@ -14,9 +14,12 @@
             let cm = document.getElementById('close-menu');
 
             function showMenu() {
-                ps.style.display = "flex";
                 ps.classList.remove('hide');
-                ps.classList.add('show');
+                ps.style.display = "flex";
+
+                void ps.offsetWidth;
+
+                ps.classList.add('show');   
                 cm.style.display = "block";
                 document.body.style.overflowY = "hidden";
                 document.body.style.height = "100vh";
