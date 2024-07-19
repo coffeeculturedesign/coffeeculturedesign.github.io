@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffe Culture</title>
     <script>
+        let country = Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[0];
+
         document.addEventListener('DOMContentLoaded', function () {
             let ps = document.getElementById('page-selector');
             let cm = document.getElementById('close-menu');
@@ -19,7 +21,7 @@
 
                 void ps.offsetWidth;
 
-                ps.classList.add('show');   
+                ps.classList.add('show');
                 cm.style.display = "block";
                 document.body.style.overflowY = "hidden";
                 document.body.style.height = "100vh";
@@ -47,6 +49,14 @@
             });
 
             document.querySelector('.close-menu').addEventListener('click', hideMenu);
+
+            // set by country
+            if (country == 'Europe') {
+                document.querySelector(':root').style.setProperty('--cappuccino-link', "url('./images/cappucino-back-eu.png')");
+                document.querySelector(':root').style.setProperty('--macchiato-link', "url('./images/macchiato-back-eu.png')");
+                document.getElementById('cappuccino-price').innerText = '€16.99';
+                document.getElementById('macchiato-price').innerText = '€16.99';
+            }
         });
     </script>
 </head>
@@ -79,7 +89,8 @@
         </div>
         <div class="page-selector" id="page-selector">
             <p class="title" onclick="location.replace('./')">Home</p>
-            <p class="title">Store</p>
+            <p class="title" onclick="document.getElementsByClassName('about')[0].scrollIntoView();">About</p>
+            <p class="title" onclick="document.getElementsByClassName('social')[0].scrollIntoView();">Social</p>
         </div>
     </div>
 
@@ -95,11 +106,12 @@
                     selling product meet the essence of every
                     day fit</p>
                 <div class="purchase-row">
-                    <div class="buy-button" onclick="window.open('https\://amzn.eu/d/gGLJNGo', '_blank').focus();">
+                    <div class="buy-button"
+                        onclick="window.open((country == 'Europe'?'https:/amzn.eu/d/gGLJNGo':'https:/a.co/d/2Nzca9a'), '_blank').focus();">
                         <p>Buy now</p>
                     </div>
                     <div style="padding-right: 40px;">
-                        <p style="font-weight: 600;">$16.99</p>
+                        <p style="font-weight: 600;" id="cappuccino-price">$23.99</p>
                     </div>
                 </div>
             </div>
@@ -119,11 +131,11 @@
                     essence of minimalism</p>
                 <div class="purchase-row">
                     <div class="buy-button" style="color: #FAFAFA; background: #492C26;"
-                        onclick="window.open('https\://amzn.eu/d/gGLJNGo', '_blank').focus();">
-                        <p>Coming soon</p>
+                        onclick="window.open('https:/amzn.eu/d/08C592pA', '_blank').focus();">
+                        <p>Buy now</p>
                     </div>
                     <div style="padding-right: 40px;">
-                        <p style="font-weight: 600;">$16.99</p>
+                        <p style="font-weight: 600;" id="macchiato-price">$23.99</p>
                     </div>
                 </div>
             </div>

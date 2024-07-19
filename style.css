@@ -1,9 +1,15 @@
+:root {
+    --cappuccino-link: url('./images/cappucino-back-us.png');
+    --macchiato-link: url("./images/macchiato-back-us.png");
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +18,8 @@ body {
     width: 100vw;
     /* height: 400vh; */
 }
- path{
+
+path {
     stroke: #492C26;
     fill: #492C26;
 }
@@ -61,6 +68,7 @@ body {
     padding: 0 25px;
     display: none;
 }
+
 .close-menu {
     display: none;
 }
@@ -94,11 +102,11 @@ body {
 }
 
 #cappuccino:hover {
-    content: url("./images/cappucino-back-us.png");
+    content: var(--cappuccino-link);
 }
 
 #macchiato:hover {
-    content: url("./images/macchiato-back-us.png");
+    content: var(--macchiato-link);
 }
 
 .bundle {
@@ -440,13 +448,14 @@ body {
     }
 
     .page-selector>p {
-        text-shadow: 0px 0px 6px #492c2600;  
+        text-shadow: 0px 0px 6px #492c2600;
         color: #492C2600;
         transition: color 0.75s, text-shadow 0.75s;
         font-size: 30px;
         margin: 40px 0;
     }
-    .page-selector p:last-child{
+
+    .page-selector p:last-child {
         margin-bottom: 240px;
     }
 
@@ -466,7 +475,7 @@ body {
         display: block;
     }
 
-    .close-menu{
+    .close-menu {
         position: absolute;
         z-index: 6;
         right: 32px;
@@ -492,18 +501,21 @@ body {
         -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
     }
+
     100% {
         background: #9797978d;
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
     }
 }
+
 @keyframes fadeout {
     0% {
         background: #9797978d;
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
     }
+
     100% {
         background: #97979700;
         -webkit-backdrop-filter: blur(0px);
@@ -511,17 +523,20 @@ body {
     }
 }
 
-.hide{
+.hide {
     animation: fadeout .75s;
 }
-.hide>p{
+
+.hide>p {
     color: #492c2600;
     text-shadow: 0px 0px 6px #492c2600;
 }
-.show{
+
+.show {
     animation: fadein .75s;
 }
-.show>p{
+
+.show>p {
     color: #492C26C0;
     text-shadow: 0px 0px 6px #492c267e;
 }
