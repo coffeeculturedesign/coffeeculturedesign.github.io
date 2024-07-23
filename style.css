@@ -336,7 +336,7 @@ path {
 
 /* portable */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .tee {
         flex-direction: column;
         padding: 0;
