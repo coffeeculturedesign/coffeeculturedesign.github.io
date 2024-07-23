@@ -7,38 +7,48 @@
     <link rel="icon" href="../images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe Culture</title>
+    <title>Coffee Culture</title>
     <script>
         let country = Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[0];
 
+        let ps, cm;
+
+
+
+        function showMenu() {
+            ps.classList.remove('hide');
+            ps.style.display = "flex";
+
+            void ps.offsetWidth;
+
+            ps.classList.add('show');
+            cm.style.display = "block";
+            document.body.style.overflowY = "hidden";
+            document.body.style.height = "100vh";
+        }
+
+        function hideMenu() {
+            ps.classList.remove('show');
+            cm.style.display = "none";
+            document.body.style.overflowY = "scroll";
+            document.body.style.height = "unset";
+            ps.classList.add('hide');
+
+            ps.addEventListener('animationend', function hideOnAnimationEnd() {
+                ps.style.display = "none";
+                ps.removeEventListener('animationend', hideOnAnimationEnd);
+            }, { once: true });
+        }
+
+        function gotoClass(classElement) {
+            if (window.innerWidth <= 600) hideMenu();
+            document.getElementsByClassName(classElement)[0].scrollIntoView();
+        }
+
+
         document.addEventListener('DOMContentLoaded', function () {
-            let ps = document.getElementById('page-selector');
-            let cm = document.getElementById('close-menu');
-
-            function showMenu() {
-                ps.classList.remove('hide');
-                ps.style.display = "flex";
-
-                void ps.offsetWidth;
-
-                ps.classList.add('show');
-                cm.style.display = "block";
-                document.body.style.overflowY = "hidden";
-                document.body.style.height = "100vh";
-            }
-
-            function hideMenu() {
-                ps.classList.remove('show');
-                cm.style.display = "none";
-                document.body.style.overflowY = "scroll";
-                document.body.style.height = "unset";
-                ps.classList.add('hide');
-
-                ps.addEventListener('animationend', function hideOnAnimationEnd() {
-                    ps.style.display = "none";
-                    ps.removeEventListener('animationend', hideOnAnimationEnd);
-                }, { once: true });
-            }
+            ps = document.getElementById('page-selector');
+            cm = document.getElementById('close-menu');
 
             document.querySelector('.menu').addEventListener('click', function () {
                 if (ps.classList.contains('show')) {
@@ -64,7 +74,7 @@
 <body>
     <div class="top-nav">
         <div class="brand-name">
-            <p class="title" onclick="location.replace('./')" style="cursor: pointer;">Coffe Culture</p>
+            <p class="title" onclick="location.replace('./')" style="cursor: pointer;">Coffee Culture</p>
         </div>
         <div class="close-menu" id="close-menu">
             <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,8 +99,8 @@
         </div>
         <div class="page-selector" id="page-selector">
             <p class="title" onclick="location.replace('./')">Home</p>
-            <p class="title" onclick="document.getElementsByClassName('about')[0].scrollIntoView();">About</p>
-            <p class="title" onclick="document.getElementsByClassName('social')[0].scrollIntoView();">Social</p>
+            <p class="title" onclick="gotoClass('about')">About</p>
+            <p class="title" onclick="gotoClass('social')">Social</p>
         </div>
     </div>
 
