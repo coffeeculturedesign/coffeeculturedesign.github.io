@@ -141,7 +141,7 @@
                     essence of minimalism</p>
                 <div class="purchase-row">
                     <div class="buy-button" style="color: #FAFAFA; background: #492C26;"
-                        onclick="window.open('https:/amzn.eu/d/08C592pA', '_blank').focus();">
+                        onclick="window.open((country == 'Europe'?'https:/amzn.eu/d/08C592pA':'https:/a.co/d/4JnM7a4'), '_blank').focus();">
                         <p>Buy now</p>
                     </div>
                     <div style="padding-right: 40px;">
@@ -204,13 +204,18 @@
                     <p class="underline-on-hoover" onclick="location.replace('./')">Home</p>
                 </div>
                 <div>
-                    <p class="underline-on-hoover">Shop</p>
+                    <p class="underline-on-hoover"
+                        onclick="document.getElementsByClassName('about')[0].scrollIntoView();">About</p>
+                </div>
+                <div>
+                    <p class="underline-on-hoover"
+                        onclick="document.getElementsByClassName('social')[0].scrollIntoView();">Social</p>
                 </div>
             </div>
             <div class="links">
                 <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Contact us</p>
                 <div>
-                    <p class="underline-on-hoover">Mail</p>
+                    <p class="underline-on-hoover" onclick="window.open('mailto:crolalibe@gmail.com');">Mail</p>
                 </div>
                 <div>
                     <p class="underline-on-hoover"
