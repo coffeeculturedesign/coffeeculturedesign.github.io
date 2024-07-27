@@ -10,10 +10,7 @@
     <title>Coffee Culture</title>
     <script>
         let country = Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[0];
-
         let ps, cm;
-
-
 
         function showMenu() {
             ps.classList.remove('hide');
@@ -44,7 +41,6 @@
             if (window.innerWidth <= 800) hideMenu();
             document.getElementsByClassName(classElement)[0].scrollIntoView();
         }
-
 
         document.addEventListener('DOMContentLoaded', function () {
             ps = document.getElementById('page-selector');
@@ -106,7 +102,7 @@
 
 
     <div class="left-oriented">
-        <div class="tee">
+        <div class="tee" id="first-fetured">
             <div class="main-image">
                 <img src="../images/cappucino-front.png" width="450px" id="cappuccino">
             </div>
