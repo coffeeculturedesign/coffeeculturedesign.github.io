@@ -22,11 +22,11 @@ function updateCountryInfo(c) {
 
 function updateShop() {
     if (country == 'Europe') {
-        document.getElementById('flag').src = '../images/eu.jpg';
         generateProducts(product.eu);
+        document.getElementById('flag').src = '../images/eu.jpg';
     } else {
-        document.getElementById('flag').src = '../images/us.jpg';
         generateProducts(product.us);
+        document.getElementById('flag').src = '../images/us.jpg';
     }
 }
 
