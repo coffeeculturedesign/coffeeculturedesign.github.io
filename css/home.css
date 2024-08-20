@@ -1,6 +1,12 @@
 :root {
     --cappuccino-link: url('./images/cappucino-back-us.png');
     --macchiato-link: url("./images/macchiato-back-us.png");
+    --site-background: #AA7C5A;
+    --color-1: #492C26;
+    --color-1t: #492C26c0;
+    --color-2: #FAFAFA;
+    --color-2t: #FAFAFAb3;
+    --color-3: #4F4E4E;
 }
 
 html,
@@ -14,14 +20,13 @@ body {
 
 body {
     position: relative;
-    background-color: #AA7C5A;
+    background-color: var(--site-background);
     width: 100vw;
-    /* height: 400vh; */
 }
 
 path {
-    stroke: #492C26;
-    fill: #492C26;
+    stroke: var(--color-1);
+    fill: var(--color-1);
 }
 
 .product-name {
@@ -37,14 +42,14 @@ path {
 .paragraph {
     text-align: justify;
     text-justify: inter-word;
-    color: white;
+    color: var(--color-2);
     font-weight: 400;
     font-size: 17px;
     line-height: 22px;
 }
 
 .semi-title {
-    color: white;
+    color: var(--color-2);
     font-size: 36px;
     margin: 15px;
 }
@@ -52,7 +57,7 @@ path {
 .title {
     font-weight: 600;
     font-size: 32px;
-    color: #492C26;
+    color: var(--color-1);
 }
 
 .top-nav {
@@ -79,12 +84,42 @@ path {
     align-items: center;
 }
 
+.page-selector>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-selector>div>p,
+.page-selector>img {
+    padding: 0;
+    margin: 0 20px;
+    color: var(--color-1t);
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .page-selector>p {
     padding: 0;
     margin: 0 20px;
-    color: #492C26C0;
+    color: var(--color-1t);
     font-size: 24px;
-    cursor: pointer;
+}
+
+.page-selector>div>p::after {
+    background-color: var(--color-1t);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evidence {
+    display: flex;
+    flex-direction: column;
+    width: clamp(976px, 100vw, 2000px);
 }
 
 .tee {
@@ -136,11 +171,11 @@ path {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: var(--color-1);
     width: 170px;
     height: 100%;
     border-radius: 7px;
-    background-color: white;
+    background-color: var(--color-2);
     cursor: pointer;
     transition: 0.1s ease-in;
 }
@@ -152,7 +187,7 @@ path {
 .section {
     position: absolute;
     top: 930px;
-    background: #FAFAFA;
+    background: var(--color-2);
     height: 700px;
     width: 400vw;
     box-shadow: inset 0px 0px 47px rgba(0, 0, 0, 0.35);
@@ -164,17 +199,14 @@ path {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: white;
+    color: var(--color-2);
 }
 
 .right-oriented {
-    /* padding: 140px;
-    padding-left: 400px;
-    padding-bottom: 0; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #492C26;
+    color: var(--color-1);
 }
 
 .right-oriented>.tee {
@@ -184,7 +216,7 @@ path {
 }
 
 .right-oriented>.bundle {
-    color: #492C26;
+    color: var(--color-1);
     justify-content: flex-end;
 }
 
@@ -200,13 +232,18 @@ path {
 }
 
 .view-more>p {
-    color: #492C26C0;
+    color: var(--color-1t);
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 300px;
 }
 
+.view-more>p::after {
+    background-color: var(--color-1t);
+}
+
+/* ABOUT */
 .about {
     display: flex;
     align-items: center;
@@ -224,6 +261,7 @@ path {
     padding: 100px;
 }
 
+/* SOCIAL */
 .social {
     display: flex;
     align-items: center;
@@ -236,19 +274,19 @@ path {
 }
 
 .social>div>p {
-    color: white;
+    color: var(--color-2);
     font-weight: 500;
     font-size: 14px;
 }
 
+/* FOOTER */
 .footer {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     height: 300px;
-    background: #4F4E4E;
-    color: rgba(255, 255, 255, 0.7);
+    background: var(--color-3);
+    color: var(--color-2t);
 }
 
 .sitemap {
@@ -282,33 +320,11 @@ path {
     padding: 1px 0;
 }
 
+.links>div>p::after {
+    background-color: var(--color-2t);
+}
+
 /* animation 1 */
-
-.page-selector>p,
-.view-more>p {
-    display: inline-block;
-    position: relative;
-}
-
-.page-selector>p::after,
-.view-more>p::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #492C26C0;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.page-selector>p:hover::after,
-.view-more>p:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 
 .underline-on-hoover {
     display: block;
@@ -324,7 +340,6 @@ path {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.7);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -336,9 +351,10 @@ path {
 
 /* portable */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 976px) {
     .tee {
         flex-direction: column;
+        width: auto;
         padding: 0;
         padding-top: 30px;
         padding-bottom: 150px;
@@ -455,15 +471,26 @@ path {
     }
 
     .page-selector>p {
-        text-shadow: 0px 0px 6px #492c2600;
-        color: #492C2600;
+        display: none;
+    }
+
+    .page-selector>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-selector>div>p {
+        text-shadow: 0px 0px 2px #492C26C0;
+        color: #492C26C0;
         transition: color 0.75s, text-shadow 0.75s;
         font-size: 30px;
         margin: 40px 0;
     }
 
     .page-selector p:last-child {
-        margin-bottom: 240px;
+        margin-bottom: 100px;
     }
 
     .brand-name>p {
@@ -502,7 +529,7 @@ path {
     }
 }
 
-@keyframes fadein {
+/* @keyframes oadp {
     0% {
         background: #97979700;
         -webkit-backdrop-filter: blur(0px);
@@ -511,6 +538,36 @@ path {
 
     100% {
         background: #9797978d;
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+    }
+}
+
+@keyframes ahdid {
+    0% {
+        background: #9797978d;
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+    }
+
+    100% {
+        background: #97979700;
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+} */
+
+
+/*PROVA*/
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+
+    100% {
+        opacity: 100%;
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
     }
@@ -518,32 +575,34 @@ path {
 
 @keyframes fadeout {
     0% {
-        background: #9797978d;
+        opacity: 100%;
         -webkit-backdrop-filter: blur(24px);
         backdrop-filter: blur(24px);
     }
 
     100% {
-        background: #97979700;
+        opacity: 0%;
         -webkit-backdrop-filter: blur(0px);
         backdrop-filter: blur(0px);
     }
 }
 
-.hide {
-    animation: fadeout .75s;
-}
 
-.hide>p {
+
+.hide {
+    animation: fadeout .4s;
+}
+/* 
+.hide>div>p {
     color: #492c2600;
     text-shadow: 0px 0px 6px #492c2600;
-}
+} */
 
 .show {
-    animation: fadein .75s;
+    animation: fadein .4s;
 }
 
-.show>p {
+/* .show>div>p {
     color: #492C26C0;
     text-shadow: 0px 0px 6px #492c267e;
-}
+} */

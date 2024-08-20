@@ -1,0 +1,58 @@
+{
+    "eu": [
+        {
+            "name": "cappuccino tee",
+            "type": "t-shirt",
+            "price": "€16.99",
+            "colors": [
+                "#492C26"
+            ],
+            "photos": [
+                "../images/cappucino-front.png",
+                "../images/cappucino-back-eu.png"
+            ],
+            "link": "https://amzn.eu/d/55fxejM"
+        },
+        {
+            "name": "macchiato tee",
+            "type": "t-shirt",
+            "price": "€16.99",
+            "colors": [
+                "#FAFAFA"
+            ],
+            "photos": [
+                "../images/macchiato-front.png",
+                "../images/macchiato-back-eu.png"
+            ],
+            "link": "https://amzn.eu/d/12FMWl8"
+        }
+    ],
+    "us": [
+        {
+            "name": "cappuccino tee",
+            "type": "t-shirt",
+            "price": "$23.99",
+            "colors": [
+                "#492C26"
+            ],
+            "photos": [
+                "../images/cappucino-front.png",
+                "../images/cappucino-back-us.png"
+            ],
+            "link": "https://a.co/d/9Uq1qlF"
+        },
+        {
+            "name": "macchiato tee",
+            "type": "t-shirt",
+            "price": "$23.99",
+            "colors": [
+                "#FAFAFA"
+            ],
+            "photos": [
+                "../images/macchiato-front.png",
+                "../images/macchiato-back-us.png"
+            ],
+            "link": "https://a.co/d/3mjfpBa"
+        }
+    ]
+}

@@ -2,122 +2,71 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="portable.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cookie.css">
     <link rel="icon" href="../images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Culture</title>
-    <script>
-        let country = Intl.DateTimeFormat().resolvedOptions().timeZone.split('/')[0];
-        let ps, cm;
-
-        function showMenu() {
-            ps.classList.remove('hide');
-            ps.style.display = "flex";
-
-            void ps.offsetWidth;
-
-            ps.classList.add('show');
-            cm.style.display = "block";
-            document.body.style.overflowY = "hidden";
-            document.body.style.height = "100vh";
-        }
-
-        function hideMenu() {
-            ps.classList.remove('show');
-            cm.style.display = "none";
-            document.body.style.overflowY = "scroll";
-            document.body.style.height = "unset";
-            ps.classList.add('hide');
-
-            ps.addEventListener('animationend', function hideOnAnimationEnd() {
-                ps.style.display = "none";
-                ps.removeEventListener('animationend', hideOnAnimationEnd);
-            }, { once: true });
-        }
-
-        function gotoClass(classElement) {
-            if (window.innerWidth <= 800) hideMenu();
-            document.getElementsByClassName(classElement)[0].scrollIntoView();
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            ps = document.getElementById('page-selector');
-            cm = document.getElementById('close-menu');
-
-            document.querySelector('.menu').addEventListener('click', function () {
-                if (ps.classList.contains('show')) {
-                    hideMenu();
-                } else {
-                    showMenu();
-                }
-            });
-
-            document.querySelector('.close-menu').addEventListener('click', hideMenu);
-
-            // set by country
-            if (country == 'Europe') {
-                document.querySelector(':root').style.setProperty('--cappuccino-link', "url('./images/cappucino-back-eu.png')");
-                document.querySelector(':root').style.setProperty('--macchiato-link', "url('./images/macchiato-back-eu.png')");
-                document.getElementById('cappuccino-price').innerText = '€16.99';
-                document.getElementById('macchiato-price').innerText = '€16.99';
-            }
-        });
-    </script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/components.js"></script>
+    <script src="./scripts/country.js"></script>
+    <script src="./scripts/home.js"></script>
 </head>
 
-<body>
+<body onload="homeloader()">
     <div class="top-nav">
-        <div class="brand-name">
-            <p class="title" onclick="location.replace('./')" style="cursor: pointer;">Coffee Culture</p>
-        </div>
-        <div class="close-menu" id="close-menu">
-            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.00098 5L19 18.9991" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M5.00009 18.9991L18.9991 5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="menu">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
-                    fill="#292D32" />
-                <path
-                    d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
-                    fill="#292D32" />
-                <path
-                    d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
-                    fill="#292D32" />
-            </svg>
-        </div>
-        <div class="page-selector" id="page-selector">
-            <p class="title" onclick="location.replace('./')">Home</p>
-            <p class="title" onclick="gotoClass('about')">About</p>
-            <p class="title" onclick="gotoClass('social')">Social</p>
-        </div>
+
     </div>
 
+    <div class="cookie-banner">
 
-    <div class="left-oriented">
-        <div class="tee" id="first-fetured">
-            <div class="main-image">
-                <img src="../images/cappucino-front.png" width="450px" id="cappuccino">
-            </div>
-            <div class="bundle">
-                <p class="product-name">Cappucino Tee</p>
-                <p style="padding-left: 10px;" class="normal-text">New for design and appeal, our best
-                    selling product meet the essence of every
-                    day fit</p>
-                <div class="purchase-row">
-                    <div class="buy-button"
-                        onclick="window.open((country == 'Europe'?'https://amzn.eu/d/gGLJNGo':'https://a.co/d/2Nzca9a'), '_blank').focus();">
-                        <p>Buy now</p>
+    </div>
+
+    <div class="center">
+        <div class="evidence">
+            <div class="left-oriented">
+                <div class="tee" id="first-fetured">
+                    <div class="main-image">
+                        <img src="../images/cappucino-front.png" width="450px" id="cappuccino">
                     </div>
-                    <div style="padding-right: 40px;">
-                        <p style="font-weight: 600;" id="cappuccino-price">$23.99</p>
+                    <div class="bundle">
+                        <p class="product-name">Cappucino Tee</p>
+                        <p style="padding-left: 10px;" class="normal-text">New for design and appeal, our best
+                            selling product meet the essence of every
+                            day fit</p>
+                        <div class="purchase-row">
+                            <div class="buy-button"
+                                onclick="window.open((country == 'Europe'?'https://amzn.eu/d/gGLJNGo':'https://a.co/d/2Nzca9a'), '_blank').focus();">
+                                <p>Buy now</p>
+                            </div>
+                            <div style="padding-right: 40px;">
+                                <p style="font-weight: 600;" id="cappuccino-price">$23.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-oriented">
+                <div class="tee" id="second-featured">
+                    <div class="main-image">
+                        <img src="../images/macchiato-front.png" width="450px" id="macchiato">
+                    </div>
+                    <div class="bundle">
+                        <p class="product-name">Macchiato Tee</p>
+                        <p style="padding-left: 10px;" class="normal-text">The lastest Coffee Culture drop, born form
+                            the
+                            essence of minimalism</p>
+                        <div class="purchase-row">
+                            <div class="buy-button" style="color: #FAFAFA; background: #492C26;"
+                                onclick="window.open((country == 'Europe'?'https://amzn.eu/d/08C592pA':'https://a.co/d/4JnM7a4'), '_blank').focus();">
+                                <p>Buy now</p>
+                            </div>
+                            <div style="padding-right: 40px;">
+                                <p style="font-weight: 600;" id="macchiato-price">$23.99</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,31 +75,8 @@
 
     <div class="section"></div>
 
-    <div class="right-oriented">
-        <div class="tee" id="second-featured">
-            <div class="main-image">
-                <img src="../images/macchiato-front.png" width="450px" id="macchiato">
-            </div>
-            <div class="bundle">
-                <p class="product-name">Macchiato Tee</p>
-                <p style="padding-left: 10px;" class="normal-text">The lastest Coffee Culture drop, born form the
-                    essence of minimalism</p>
-                <div class="purchase-row">
-                    <div class="buy-button" style="color: #FAFAFA; background: #492C26;"
-                        onclick="window.open((country == 'Europe'?'https://amzn.eu/d/08C592pA':'https://a.co/d/4JnM7a4'), '_blank').focus();">
-                        <p>Buy now</p>
-                    </div>
-                    <div style="padding-right: 40px;">
-                        <p style="font-weight: 600;" id="macchiato-price">$23.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div class="view-more">
-        <p>View other products</p>
+        <p class="underline-on-hoover" onclick="location.replace('../shop/')">View other products</p>
     </div>
 
 
@@ -190,50 +116,7 @@
     </div>
 
     <div class="footer">
-        <div class="sitemap">
-            <div class="logo">
-                <img src="../images/logo.png" height="70px" width="70px">
-            </div>
-            <div class="links">
-                <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Our company</p>
-                <div>
-                    <p class="underline-on-hoover" onclick="location.replace('./')">Home</p>
-                </div>
-                <div>
-                    <p class="underline-on-hoover"
-                        onclick="document.getElementsByClassName('about')[0].scrollIntoView();">About</p>
-                </div>
-                <div>
-                    <p class="underline-on-hoover"
-                        onclick="document.getElementsByClassName('social')[0].scrollIntoView();">Social</p>
-                </div>
-            </div>
-            <div class="links">
-                <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Contact us</p>
-                <div>
-                    <p class="underline-on-hoover" onclick="window.open('mailto:crolalibe@gmail.com');">Mail</p>
-                </div>
-                <div>
-                    <p class="underline-on-hoover"
-                        onclick="window.open('https\://www.instagram.com/coffeeculturedesign/', '_blank').focus();">
-                        Direct</p>
-                </div>
-            </div>
-            <div class="links">
-                <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Social</p>
-                <div>
-                    <p class="underline-on-hoover"
-                        onclick="window.open('https\://www.instagram.com/coffeeculturedesign/', '_blank').focus();">
-                        Instagram</p>
-                </div>
-                <div>
-                    <p class="underline-on-hoover"
-                        onclick="window.open('https\://www.threads.net/@coffeeculturedesign', '_blank').focus();">
-                        Threads</p>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">© 2024 Coffee Culture. All rights reserved. | Privacy Policy | Terms of Service</div>
+
     </div>
 </body>
 

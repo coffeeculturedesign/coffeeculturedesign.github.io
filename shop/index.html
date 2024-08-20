@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/cookie.css">
+    <link rel="icon" href="../images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="../scripts/functions.js"></script>
+    <script src="../scripts/components.js"></script>
+    <script src="../scripts/country.js"></script>
+    <script src="../scripts/shop.js"></script>
+</head>
+
+<body onload="shopload()">
+
+    <div class="top-nav">
+
+    </div>
+
+    <div class="cookie-banner">
+
+    </div>
+
+
+    <div class="container">
+        <div class="filters" id="filters">
+            <span class="center">
+                <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleFilters()">
+                    <path
+                        d="M25.375 9.36458H3.625C3.12958 9.36458 2.71875 8.95375 2.71875 8.45833C2.71875 7.96292 3.12958 7.55208 3.625 7.55208H25.375C25.8704 7.55208 26.2813 7.96292 26.2813 8.45833C26.2813 8.95375 25.8704 9.36458 25.375 9.36458Z"
+                        fill="#EAE4E5" />
+                    <path
+                        d="M21.75 15.4063H7.25C6.75458 15.4063 6.34375 14.9954 6.34375 14.5C6.34375 14.0046 6.75458 13.5938 7.25 13.5938H21.75C22.2454 13.5938 22.6563 14.0046 22.6563 14.5C22.6563 14.9954 22.2454 15.4063 21.75 15.4063Z"
+                        fill="#EAE4E5" />
+                    <path
+                        d="M16.9168 21.4479H12.0835C11.5881 21.4479 11.1772 21.0371 11.1772 20.5417C11.1772 20.0462 11.5881 19.6354 12.0835 19.6354H16.9168C17.4122 19.6354 17.8231 20.0462 17.8231 20.5417C17.8231 21.0371 17.4122 21.4479 16.9168 21.4479Z"
+                        fill="#EAE4E5" />
+                </svg>
+                <h1 id="fff">Filters</h1>
+                <h1 id="sss">Shop - All products</h1>
+                <span style="width: 26px;"></span>
+            </span>
+            <div id="filters-part">
+                <div class="indent">
+                    <h2>Type:</h2>
+                    <p class="indent center"><input type="checkbox">T-shirts</p>
+                    <p class="indent center"><input type="checkbox">Hoodies</p>
+                    <p class="indent center"><input type="checkbox">Jackets</p>
+                    <p class="indent center"><input type="checkbox">Piloows</p>
+                </div>
+                <div class="indent">
+                    <h2>Color:</h2>
+                    <div class="indent color-filter">
+                        <p class="center color-filter"><input type="checkbox" style="background: var(--color-1);"></p>
+                        <p class="center color-filter"><input type="checkbox" style="background: var(--color-2);"></p>
+                        <p class="center color-filter"><input type="checkbox" style="background: var(--color-3);"></p>
+                        <p class="center color-filter"><input type="checkbox" style="background: #888;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shop-section">
+            <div class="shop-title center">
+                <h1>Shop - All products</h1>
+            </div>
+            <div class="card-holder">
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+    </div>
+
+</body>
+
+</html>
