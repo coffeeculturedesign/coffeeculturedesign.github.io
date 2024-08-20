@@ -1,4 +1,4 @@
-let country = '';
+let country = 'Europe';
 
 if (getCookie('country') != '') {
     country = getCookie('country');

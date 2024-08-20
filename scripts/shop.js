@@ -11,6 +11,8 @@ fetch('../product.json')
 function shopload() {
     getNavBar('top-nav');
     getFooter('footer');
+    updateCountryInfo(country);
+
     if (getCookie('agree') == '') {
         getCookieBanner('cookie-banner');
     }
@@ -26,5 +28,4 @@ function shopload() {
     if (window.innerWidth > 976)
         document.getElementById('filters').style.height = document.getElementById('shop-section').offsetHeight + 'px';
 
-    updateCountryInfo(country);
 }
