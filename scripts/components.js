@@ -41,7 +41,7 @@ function getFooter(where) {
         `
     <div class="sitemap">
         <div class="logo">
-            <img src="../images/logo.png" height="70px" width="70px">
+            <img src="../images/coffee culture logo.png" height="70px" width="70px">
         </div>
         <div class="links">
             <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Our company</p>
