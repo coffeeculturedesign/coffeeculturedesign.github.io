@@ -1,7 +1,7 @@
 function getNavBar(where) {
     let component = /* html */
         `<div class="brand-name">
-        <p class="title" style="cursor: pointer;"><a href="../">Coffee Culture</a></p>
+        <h1 class="title" style="cursor: pointer;"><a href="../">Coffee Culture</a></h1>
     </div>
     <div class="close-menu" id="close-menu">
         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
