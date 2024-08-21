@@ -46,15 +46,10 @@ function getFooter(where) {
         <div class="links">
             <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Our company</p>
             <div>
-                <p class="underline-on-hoover" onclick="location.replace('./')">Home</p>
+                <p class="underline-on-hoover"><a href="../">Home</a></p>
             </div>
             <div>
-                <p class="underline-on-hoover"
-                    onclick="document.getElementsByClassName('about')[0].scrollIntoView();">About</p>
-            </div>
-            <div>
-                <p class="underline-on-hoover"
-                    onclick="document.getElementsByClassName('social')[0].scrollIntoView();">Social</p>
+                <p class="underline-on-hoover"><a href="../shop">Shop</a></p>
             </div>
         </div>
         <div class="links">
@@ -63,22 +58,20 @@ function getFooter(where) {
                 <p class="underline-on-hoover" onclick="window.open('mailto:crolalibe@gmail.com');">Mail</p>
             </div>
             <div>
-                <p class="underline-on-hoover"
-                    onclick="window.open('https\://www.instagram.com/coffeeculturedesign/', '_blank').focus();">
-                    Direct</p>
+                <p class="underline-on-hoover">
+                    <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank">Direct</a></p>
             </div>
         </div>
         <div class="links">
             <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Social</p>
             <div>
-                <p class="underline-on-hoover"
-                    onclick="window.open('https\://www.instagram.com/coffeeculturedesign/', '_blank').focus();">
-                    Instagram</p>
+                <p class="underline-on-hoover">
+                <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank">Instagram</a></p>
             </div>
             <div>
                 <p class="underline-on-hoover"
                     onclick="window.open('https\://www.threads.net/@coffeeculturedesign', '_blank').focus();">
-                    Threads</p>
+                    <a href="https://www.threads.net/@coffeeculturedesign" target="_blank">Threads</a></p>
             </div>
         </div>
     </div>
