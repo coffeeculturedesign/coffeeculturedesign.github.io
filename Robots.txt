@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /full-quality-img/
+
+User-agent: Googlebot
+Allow: /
