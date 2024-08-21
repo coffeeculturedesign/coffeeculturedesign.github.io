@@ -1,7 +1,7 @@
 function getNavBar(where) {
     let component = /* html */
         `<div class="brand-name">
-        <p class="title" onclick="location.replace('../')" style="cursor: pointer;">Coffee Culture</p>
+        <p class="title" style="cursor: pointer;"><a href="../">Coffee Culture</a></p>
     </div>
     <div class="close-menu" id="close-menu">
         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,8 +26,8 @@ function getNavBar(where) {
     </div>
     <div class="page-selector" id="page-selector">
         <div>
-            <p class="title underline-on-hoover" onclick="location.replace('../')">Home</p>
-            <p class="title underline-on-hoover" onclick="location.replace('../shop/')">Shop</p>
+            <p class="title underline-on-hoover"><a href="../">Home</a></p>
+            <p class="title underline-on-hoover"><a href="../shop">Shop</a></p>
         </div>
         <p>|</p>
         <img src="../images/eu.jpg" height="28px" id="flag" onclick="toggleCountry()">
