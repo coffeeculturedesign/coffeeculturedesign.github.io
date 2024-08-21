@@ -8,8 +8,8 @@
                 "#492C26"
             ],
             "photos": [
-                "../images/cappucino front.png",
-                "../images/cappucino back eu.png"
+                "../images/cappucino-front.png",
+                "../images/cappucino-back-eu.png"
             ],
             "link": "https://amzn.eu/d/55fxejM"
         },
@@ -21,8 +21,8 @@
                 "#FAFAFA"
             ],
             "photos": [
-                "../images/macchiato front.png",
-                "../images/macchiato back eu.png"
+                "../images/macchiato-front.png",
+                "../images/macchiato-back-eu.png"
             ],
             "link": "https://amzn.eu/d/12FMWl8"
         }
@@ -36,8 +36,8 @@
                 "#492C26"
             ],
             "photos": [
-                "../images/cappucino front.png",
-                "../images/cappucino back us.png"
+                "../images/cappucino-front.png",
+                "../images/cappucino-back-us.png"
             ],
             "link": "https://a.co/d/9Uq1qlF"
         },
@@ -49,8 +49,8 @@
                 "#FAFAFA"
             ],
             "photos": [
-                "../images/macchiato front.png",
-                "../images/macchiato back us.png"
+                "../images/macchiato-front.png",
+                "../images/macchiato-back-us.png"
             ],
             "link": "https://a.co/d/3mjfpBa"
         }

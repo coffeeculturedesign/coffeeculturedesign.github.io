@@ -33,14 +33,14 @@ function updateShop() {
 function updateHome() {
     if (country == 'Europe') {
         document.getElementById('flag').src = '../images/eu.jpg';
-        document.querySelector(':root').style.setProperty('--cappuccino-link', "url('../images/cappucino back eu.png')");
-        document.querySelector(':root').style.setProperty('--macchiato-link', "url('../images/macchiato back eu.png')");
+        document.querySelector(':root').style.setProperty('--cappuccino-link', "url('../images/cappucino-back-eu.png')");
+        document.querySelector(':root').style.setProperty('--macchiato-link', "url('../images/macchiato-back-eu.png')");
         document.getElementById('cappuccino-price').innerHTML = '€16.99';
         document.getElementById('macchiato-price').innerHTML = '€16.99';
     } else {
         document.getElementById('flag').src = '../images/us.jpg';
-        document.querySelector(':root').style.setProperty('--cappuccino-link', "url('../images/cappucino back us.png')");
-        document.querySelector(':root').style.setProperty('--macchiato-link', "url('../images/macchiato back us.png')");
+        document.querySelector(':root').style.setProperty('--cappuccino-link', "url('../images/cappucino-back-us.png')");
+        document.querySelector(':root').style.setProperty('--macchiato-link', "url('../images/macchiato-back-us.png')");
         document.getElementById('cappuccino-price').innerText = '$23.99';
         document.getElementById('macchiato-price').innerText = '$23.99';
     }
