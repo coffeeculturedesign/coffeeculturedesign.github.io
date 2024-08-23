@@ -208,6 +208,11 @@ h4 {
     transition: 0.1s ease-in;
 }
 
+#second-featured .buy-button {
+    color: var(--color-2);
+    background: var(--color-1);
+}
+
 .buy-button:hover {
     border-radius: 10px;
 }
