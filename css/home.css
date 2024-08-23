@@ -66,10 +66,11 @@ h3 {
     line-height: 22px;
 }
 
-.semi-title {
+h4 {
     color: var(--color-2);
     font-size: 36px;
     margin: 15px;
+    font-weight: 400;
 }
 
 .title {
