@@ -119,11 +119,11 @@ input[type=radio] {
     gap: 10px;
 }
 
-#sss{
+#sss {
     display: none;
 }
 
-.filters-part{
+.filters-part {
     gap: 15px;
 }
 
@@ -212,8 +212,11 @@ input[type=radio] {
     width: 100%;
 }
 
-.indent {
-    padding-left: 15px;
+/* da sistemare */
+.top-nav h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--color-1);
 }
 
 @media screen and (max-width: 976px) {
@@ -260,7 +263,7 @@ input[type=radio] {
         display: none;
     }
 
-    #sss{
+    #sss {
         display: block;
     }
 
@@ -287,4 +290,9 @@ input[type=radio] {
     .shop-title {
         display: none;
     }
+
+    .top-nav h1 {
+        font-size: 24px;
+    }
 }
+

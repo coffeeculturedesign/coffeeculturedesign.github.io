@@ -9,6 +9,12 @@
     --color-3: #4F4E4E;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--color-1);
+}
+
 html,
 body {
     margin: 0;
@@ -40,16 +46,15 @@ path {
 .bundle>h2{
     margin: 0;
     padding: 5px 0;
-}
-
-.product-name {
     font-size: 26px;
     font-weight: 600;
 }
 
-.normal-text {
+h3 {
     font-weight: 400;
     font-size: 14px;
+    padding: 5px 0;
+    margin: 0;
 }
 
 .paragraph {
@@ -459,7 +464,7 @@ path {
         width: 330px;
     }
 
-    .title {
+    h1 {
         font-size: 24px;
     }
 
@@ -506,7 +511,7 @@ path {
         margin-bottom: 100px;
     }
 
-    .brand-name>p {
+    .brand-name {
         margin: auto 20px;
     }
 
