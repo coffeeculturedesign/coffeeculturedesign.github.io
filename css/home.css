@@ -44,7 +44,7 @@ path {
     fill: var(--color-1);
 }
 
-.bundle>h2{
+.bundle>h2 {
     margin: 0;
     padding: 5px 0;
     font-size: 26px;
@@ -187,6 +187,14 @@ h4 {
     padding: 20px 0;
 }
 
+.price {
+    padding-right: 40px;
+}
+
+.price>p {
+    font-weight: 600;
+}
+
 .buy-button {
     display: flex;
     align-items: center;
@@ -279,6 +287,12 @@ h4 {
     width: 500px;
     height: 306px;
     padding: 100px;
+    border-right: 1px solid #FFFFFF40;
+}
+
+.info:last-child {
+    border-right: none;
+    border-left: 1px solid #FFFFFF40;
 }
 
 /* SOCIAL */
@@ -296,8 +310,13 @@ h4 {
 .social>div>p {
     color: var(--color-2);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 }
+
+.follow>h4 {
+    margin: 18px 0;
+}
+
 
 /* FOOTER */
 .footer {
