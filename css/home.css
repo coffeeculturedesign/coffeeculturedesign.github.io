@@ -421,11 +421,13 @@ h4 {
 
     .about {
         flex-direction: column;
-        height: 1000px;
+        height: min-content;
     }
 
     .info {
+        padding: 50px;
         width: 300px;
+        height: min-content;
     }
 
     .social {
