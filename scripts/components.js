@@ -59,19 +59,18 @@ function getFooter(where) {
             </div>
             <div>
                 <p class="underline-on-hoover">
-                    <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank">Direct</a></p>
+                    <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank" title="Coffee Culture's Instagram">Direct</a></p>
             </div>
         </div>
         <div class="links">
             <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Social</p>
             <div>
                 <p class="underline-on-hoover">
-                <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank">Instagram</a></p>
+                <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank" title="Coffee Culture's Instagram">Instagram</a></p>
             </div>
             <div>
-                <p class="underline-on-hoover"
-                    onclick="window.open('https\://www.threads.net/@coffeeculturedesign', '_blank').focus();">
-                    <a href="https://www.threads.net/@coffeeculturedesign" target="_blank">Threads</a></p>
+                <p class="underline-on-hoover">
+                    <a href="https://www.threads.net/@coffeeculturedesign" target="_blank" title="Coffee Culture's Threads">Threads</a></p>
             </div>
         </div>
     </div>

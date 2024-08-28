@@ -9,7 +9,7 @@
             ],
             "photos": [
                 "../images/basic-tee-cappucino-front.png",
-                "../images/cappucino-back-eu.png"
+                "../images/basic-tee-cappucino-back-eu.png"
             ],
             "link": "https://amzn.eu/d/55fxejM"
         },
@@ -22,7 +22,7 @@
             ],
             "photos": [
                 "../images/basic-tee-macchiato-front.png",
-                "../images/macchiato-back-eu.png"
+                "../images/basic-tee-macchiato-back-eu.png"
             ],
             "link": "https://amzn.eu/d/12FMWl8"
         }
@@ -37,7 +37,7 @@
             ],
             "photos": [
                 "../images/basic-tee-cappucino-front.png",
-                "../images/cappucino-back-us.png"
+                "../images/basic-tee-cappucino-back-us.png"
             ],
             "link": "https://a.co/d/9Uq1qlF"
         },
@@ -50,7 +50,7 @@
             ],
             "photos": [
                 "../images/basic-tee-macchiato-front.png",
-                "../images/macchiato-back-us.png"
+                "../images/basic-tee-macchiato-back-us.png"
             ],
             "link": "https://a.co/d/3mjfpBa"
         }
