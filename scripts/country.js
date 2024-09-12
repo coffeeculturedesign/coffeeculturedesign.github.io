@@ -23,10 +23,14 @@ function updateCountryInfo(c) {
 function updateShop() {
     if (country == 'Europe') {
         generateProducts(product.eu);
-        document.getElementById('flag').src = '../images/eu.jpg';
+        try {
+            document.getElementById('flag').src = '../images/eu.jpg';
+        } catch (error) { }
     } else {
         generateProducts(product.us);
-        document.getElementById('flag').src = '../images/us.jpg';
+        try {
+            document.getElementById('flag').src = '../images/us.jpg';
+        } catch (error) { }
     }
 }
 

@@ -5,7 +5,7 @@ fetch('../product.json')
     .then(res => res.json())
     .then((data) => {
         product = data;
-        updateShop();
+        updateCountryInfo(country);
     })
     .catch(err => console.error(err));
 
@@ -28,5 +28,4 @@ function shopload() {
     if (window.innerWidth > 976)
         document.getElementById('filters').style.height = document.getElementById('shop-section').offsetHeight + 'px';
 
-    updateCountryInfo(country);
 }
