@@ -27,7 +27,7 @@ function getNavBar(where) {
     <div class="page-selector" id="page-selector">
         <div>
             <p class="title underline-on-hoover"><a href="../" title="Coffee Culture's Home Page">Home</a></p>
-            <p class="title underline-on-hoover"><a href="../shop" title="Coffee Culture's Shop Page">Shop</a></p>
+            <p class="title underline-on-hoover"><a href="../shop/" title="Coffee Culture's Shop Page">Shop</a></p>
         </div>
         <p>|</p>
         <img src="../images/eu.jpg" height="28px" id="flag" onclick="toggleCountry()">
@@ -49,7 +49,7 @@ function getFooter(where) {
                 <p class="underline-on-hoover"><a href="../"  title="Coffee Culture's Home Page">Home</a></p>
             </div>
             <div>
-                <p class="underline-on-hoover"><a href="../shop" title="Coffee Culture's Shop Page">Shop</a></p>
+                <p class="underline-on-hoover"><a href="../shop/" title="Coffee Culture's Shop Page">Shop</a></p>
             </div>
         </div>
         <div class="links">
