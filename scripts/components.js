@@ -51,6 +51,9 @@ function getFooter(where) {
             <div>
                 <p class="underline-on-hoover"><a href="../shop/" title="Coffee Culture's Shop Page">Shop</a></p>
             </div>
+            <div>
+                <p class="underline-on-hoover"><a href="../cookie/" title="Coffee Culture's Cookies Policy">Cookies</a></p>
+            </div>
         </div>
         <div class="links">
             <p>Contact us</p>
