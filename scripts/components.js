@@ -129,7 +129,7 @@ function getCookieBanner(where) {
             </svg>
         </div>
         <div>
-            <p>We use thrid-party <span>cookies</span> in order to personalize your site expirience.</p>
+            <p>We use thrid-party <span><a href="../cookie/" title="Cookie Policy">cookies</a></span> in order to personalize your site expirience.</p>
         </div>
         <div class="cookie-btn-holder">
             <div class="cookie-btn center" onclick="agreeToCookie(true)">

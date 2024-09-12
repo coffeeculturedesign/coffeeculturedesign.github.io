@@ -15,6 +15,8 @@ function updateCountryInfo(c) {
         case 'shop':
             updateShop();
             break;
+        case 'cookie':
+            break;
         default:
             updateHome();
     }
