@@ -44,7 +44,7 @@ function getFooter(where) {
             <img src="../images/coffee-culture-logo.png" height="70px" width="70px">
         </div>
         <div class="links">
-            <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Our company</p>
+            <p>Our company</p>
             <div>
                 <p class="underline-on-hoover"><a href="../"  title="Coffee Culture's Home Page">Home</a></p>
             </div>
@@ -53,7 +53,7 @@ function getFooter(where) {
             </div>
         </div>
         <div class="links">
-            <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Contact us</p>
+            <p>Contact us</p>
             <div>
                 <p class="underline-on-hoover" onclick="window.open('mailto:crolalibe@gmail.com');">Mail</p>
             </div>
@@ -63,7 +63,7 @@ function getFooter(where) {
             </div>
         </div>
         <div class="links">
-            <p style="margin: 5px 0; color: rgba(255, 255, 255, 0.9);">Social</p>
+            <p>Social</p>
             <div>
                 <p class="underline-on-hoover">
                 <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank" title="Coffee Culture's Instagram">Instagram</a></p>
