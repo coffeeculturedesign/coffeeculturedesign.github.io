@@ -1,7 +1,7 @@
 function getNavBar(where) {
     let component = /* html */
         `<div class="brand-name">
-        <h1 onclick="location.replace('../')">Coffee Culture</h1>
+        <h1><a href="../" title="Coffee Culture's Home Page">Coffee Culture</a></h1>
     </div>
     <div class="close-menu" id="close-menu">
         <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,19 +93,21 @@ function getCard(p) {
 
     let component = /* html */
         `
-    <div class="card" onclick="window.open('${p.link}', '_blank').focus();">
-        <div class="center max-content">
-            <img src="${p.photos[0]}" width="200px">
-        </div>
-        <h3>${p.type}</h3>
-        <h1>${p.name}</h1>
-        <div class="color-and-price max-content">
-            <div id="radio-holder">
-                ${radioColors(p.colors)}
+    <a href="${p.link}" target="_blank" title="Shop on Amazon">
+        <div class="card">
+            <div class="center max-content">
+                <img src="${p.photos[0]}" width="200px">
             </div>
-            <h2>${p.price}</h2>
+            <h3>${p.type}</h3>
+            <h1>${p.name}</h1>
+            <div class="color-and-price max-content">
+                <div id="radio-holder">
+                    ${radioColors(p.colors)}
+                </div>
+                <h2>${p.price}</h2>
+            </div>
         </div>
-    </div>
+    </a>
     `;
 
     return component;
