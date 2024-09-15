@@ -1,17 +1,19 @@
 let ps, cm;
 let product;
 
-fetch('../product.json')
-    .then(res => res.json())
-    .then((data) => {
-        product = data;
-        updateCountryInfo(country);
-    })
-    .catch(err => console.error(err));
+
 
 function shopload() {
     getNavBar('top-nav');
     getFooter('footer');
+
+    fetch('../product.json')
+        .then(res => res.json())
+        .then((data) => {
+            product = data;
+            updateShop()
+        })
+        .catch(err => console.error(err));
 
     if (getCookie('agree') == '') {
         getCookieBanner('cookie-banner');

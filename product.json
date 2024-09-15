@@ -1,8 +1,8 @@
 {
     "eu": [
         {
-            "name": "cappuccino tee",
-            "type": "t-shirt",
+            "name": "cappuccino",
+            "type": "basic tee",
             "price": "€16.99",
             "colors": [
                 "#492C26"
@@ -14,8 +14,8 @@
             "link": "https://amzn.eu/d/55fxejM"
         },
         {
-            "name": "macchiato tee",
-            "type": "t-shirt",
+            "name": "macchiato",
+            "type": "basic tee",
             "price": "€16.99",
             "colors": [
                 "#FAFAFA"
@@ -29,8 +29,8 @@
     ],
     "us": [
         {
-            "name": "cappuccino tee",
-            "type": "t-shirt",
+            "name": "cappuccino",
+            "type": "basic tee",
             "price": "$23.99",
             "colors": [
                 "#492C26"
@@ -42,8 +42,8 @@
             "link": "https://a.co/d/9Uq1qlF"
         },
         {
-            "name": "macchiato tee",
-            "type": "t-shirt",
+            "name": "macchiato",
+            "type": "basic tee",
             "price": "$23.99",
             "colors": [
                 "#FAFAFA"
@@ -53,6 +53,23 @@
                 "../images/basic-tee-macchiato-back-us.png"
             ],
             "link": "https://a.co/d/3mjfpBa"
+        },
+        {
+            "name": "coffee leaf",
+            "type": "hoodie",
+            "price": "$31.99",
+            "colors": [
+                "#000000",
+                "#807E78",
+                "#154734",
+                "#63666A",
+                "#9AA297"
+            ],
+            "photos": [
+                "../images/hoodie-coffee-leaf-front.png",
+                "../images/hoodie-coffee-leaf-back.png"
+            ],
+            "link": "https://a.co/d/ikRgG3r"
         }
     ]
 }

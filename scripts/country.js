@@ -27,12 +27,12 @@ function updateShop() {
         generateProducts(product.eu);
         try {
             document.getElementById('flag').src = '../images/eu.jpg';
-        } catch (error) { }
+        } catch (error) { console.log(error) }
     } else {
         generateProducts(product.us);
         try {
             document.getElementById('flag').src = '../images/us.jpg';
-        } catch (error) { }
+        } catch (error) { console.log(error) }
     }
 }
 
