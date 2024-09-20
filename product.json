@@ -25,6 +25,21 @@
                 "../images/basic-tee-macchiato-back-eu.png"
             ],
             "link": "https://amzn.eu/d/12FMWl8"
+        },
+        {
+            "name": "coffee leaf",
+            "type": "hoodie",
+            "price": "$29.99",
+            "colors": [
+                "#000000",
+                "#63666A",
+                "#9AA297"
+            ],
+            "photos": [
+                "../images/hoodie-coffee-leaf-front.png",
+                "../images/hoodie-coffee-leaf-back.png"
+            ],
+            "link": "https://amzn.eu/d/fmg7FEe"
         }
     ],
     "us": [
