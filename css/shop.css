@@ -98,7 +98,8 @@ input[type=radio] {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
+    max-width: 180px;
     gap: 15px;
     padding: 0 40px;
     /*temporary*/
@@ -245,6 +246,7 @@ input[type=radio] {
 
     .filters {
         width: 100%;
+        max-width: unset;
         padding: 0;
         border-bottom: 1px dotted var(--color-2);
         padding-bottom: 15px;

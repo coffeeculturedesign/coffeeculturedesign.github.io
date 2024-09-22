@@ -16,6 +16,7 @@ function updateCountryInfo(c) {
             updateShop();
             break;
         case 'cookie':
+            updateCookiePage();
             break;
         default:
             updateHome();
@@ -49,5 +50,12 @@ function updateHome() {
         document.querySelector(':root').style.setProperty('--macchiato-link', "url('../images/basic-tee-macchiato-back-us.png')");
         document.getElementById('cappuccino-price').innerText = '$23.99';
         document.getElementById('macchiato-price').innerText = '$23.99';
+    }
+}
+function updateCookiePage() {
+    if (country == 'Europe') {
+        document.getElementById('flag').src = '../images/eu.jpg';
+    } else {
+        document.getElementById('flag').src = '../images/us.jpg';
     }
 }

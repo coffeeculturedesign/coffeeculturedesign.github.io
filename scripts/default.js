@@ -15,4 +15,6 @@ function defaultload() {
     document.querySelector('.menu').addEventListener('click', toggleMobileMenu);
 
     document.querySelector('.close-menu').addEventListener('click', hideMenu);
+
+    updateCountryInfo(country);
 }

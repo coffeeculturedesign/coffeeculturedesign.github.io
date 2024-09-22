@@ -70,6 +70,19 @@
             "link": "https://a.co/d/3mjfpBa"
         },
         {
+            "name": "espresso",
+            "type": "basic tee",
+            "price": "$23.99",
+            "colors": [
+                "#000000"
+            ],
+            "photos": [
+                "../images/basic-tee-espresso-front.png",
+                "../images/basic-tee-espresso-back-us.png"
+            ],
+            "link": "https://a.co/d/3mjfpBa"
+        },
+        {
             "name": "coffee leaf",
             "type": "hoodie",
             "price": "$31.99",
