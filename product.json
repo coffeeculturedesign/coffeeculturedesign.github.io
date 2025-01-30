@@ -40,6 +40,19 @@
             "link": "https://amzn.eu/d/cOSutSM"
         },
         {
+            "name": "mochaccino",
+            "type": "basic tee",
+            "price": "$16.99",
+            "colors": [
+                "#C0C0C0"
+            ],
+            "photos": [
+                "../images/basic-tee-mocaccino-front.png",
+                "../images/basic-tee-mocaccino-back-eu.png"
+            ],
+            "link": "https://amzn.eu/d/eHY2BnP"
+        },
+        {
             "name": "coffee leaf",
             "type": "hoodie",
             "price": "$29.99",
@@ -94,6 +107,19 @@
                 "../images/basic-tee-espresso-back-us.png"
             ],
             "link": "https://a.co/d/3KwrIKT"
+        },
+        {
+            "name": "mochaccino",
+            "type": "basic tee",
+            "price": "$23.99",
+            "colors": [
+                "#C0C0C0"
+            ],
+            "photos": [
+                "../images/basic-tee-mocaccino-front.png",
+                "../images/basic-tee-mocaccino-back-us.png"
+            ],
+            "link": "https://a.co/d/6RGsnoa"
         },
         {
             "name": "coffee leaf",
