@@ -1,0 +1,9 @@
+<a href="${getCookie('country') == 'Europe'? obj.ueLink:obj.usLink}"
+    target="_blank">
+    <div class="flex column align-start shop-card">
+        <img src="${obj.photos[0]}" alt="" width="230">
+        <h2>${obj.name}</h2>
+        <h4>${obj.collection}</h4>
+        <h6 class="align-self-end">${getCookie('country') == 'Europe'? obj.uePrice:obj.usPrice}</h6>
+    </div>
+</a>

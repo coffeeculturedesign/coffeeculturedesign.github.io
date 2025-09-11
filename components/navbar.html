@@ -1,0 +1,49 @@
+<div class="flex width-100 max-width">
+    <div class="flex row space-between width-100 navbar-container">
+        <div class="flex navbar-menu">
+            <a href="../">
+                <h1>COFFEE CULTURE</h1>
+            </a>
+            <a href="../">
+                <h2 class="underline">Home</h2>
+            </a>
+            <a href="../#shop">
+                <h2 class="underline">Shop</h2>
+            </a>
+            <a href="../about/">
+                <h2 class="underline">Brand</h2>
+            </a>
+        </div>
+        <div class="flex navbar-language">
+            <img src="../img/ue-flag.webp" alt="" width="50" height="32" id="navbar-language-img"
+                onclick="toggleCountry()">
+        </div>
+
+        <div class="flex navbar-menu-mobile">
+            <a href="../">
+                <h1>COFFEE CULTURE</h1>
+            </a>
+        </div>
+        <div class="flex navbar-hamburger-mobile">
+            <img src="../svg/hamburger.svg" alt="" width="32" onclick="openMenu()">
+        </div>
+        <div class="flex column navbar-link-mobile" id="navbar-link-mobile">
+            <img src="../svg/cross.svg" alt="" width="32" onclick="closeMenu()" class="navbar-link-mobile-cross">
+            <a href="../"  onclick="closeMenu()">
+                <h2 class="underline">Home</h2>
+            </a>
+            <a href="../#shop" onclick="closeMenu()">
+                <h2 class="underline">Shop</h2>
+            </a>
+            <a href="../about/"  onclick="closeMenu()">
+                <h2 class="underline">Brand</h2>
+            </a>
+            <div class="navbar-link-mobile-line"></div>
+            <img src="../img/ue-flag.webp" alt="" width="50" height="32" id="navbar-language-img-mobile"
+                onclick="toggleCountry()">
+        </div>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.footer {
+  background-color: #fafafa;
+}
+
+.footer-container {
+  padding: 80px 30px;
+  gap: 60px 100px;
+  flex-wrap: wrap;
+
+  h3 {
+    color: #653e36;
+  }
+
+  p {
+    color: #653e36;
+  }
+}
+
+.footer-links {
+  gap: 60px 100px;
+}
+
+.footer-logo {
+  gap: 10px;
+}
+
+.footer-link {
+  gap: 10px;
+}
+
+.footer-followus {
+  gap: 10px;
+  max-width: 300px;
+}
+
+.footer-social {
+  gap: 20px;
+}
+
+@media (max-width: 976px) {
+  .footer-container,
+  .footer-links {
+    gap: 60px 60px;
+  }
+}

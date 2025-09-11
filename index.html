@@ -2,139 +2,72 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../css/shared.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/cookie.css">
-    <link rel="icon" href="../images/coffee-culture-logo.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Born in Italy, Coffee Culture captures the true essence of Italian coffee tradition. We offer a timeless and elegant touch to elevate our customers' lifestyle, blending modern sophistication with classic design.">
-    <title>Coffee Culture - Designed in Italy</title>
-    <script src="./scripts/functions.js"></script>
-    <script src="./scripts/components.js"></script>
-    <script src="./scripts/country.js"></script>
-    <script src="./scripts/home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#aa7c5a" media="(prefers-color-scheme: dark)">
+
+    <script data-goatcounter="https://coffeeculture.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="../scripts/components-loader.js"></script>
+    <script src="../scripts/functions.js"></script>
+    <script src="../scripts/default.js"></script>
+    <script src="../scripts/home.js"></script>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css  ">
+    <link rel="stylesheet" href="../css/footer.css  ">
+    <link rel="stylesheet" href="../css/home.css  ">
+
+    <title>Home - Coffee Culture</title>
 </head>
 
-<body onload="homeloader()">
-    <div class="top-nav">
-        <noscript>
-            <h1>Coffee Culture</h1>
-        </noscript>
+<body class="flex column">
+
+    <div class="flex width-100 navbar" id="navbar">
     </div>
 
-    <div class="cookie-banner">
-
-    </div>
-
-    <div class="center">
-        <div class="evidence">
-            <div class="left-oriented">
-                <div class="tee" id="first-fetured">
-                    <div class="main-image">
-                        <img src="../images/basic-tee-cappucino-front.png" width="450" id="cappuccino"
-                            alt="Coffee Culture Cappuccino Tshirt">
-                    </div>
-                    <div class="bundle">
-                        <h2 class="product-name">Cappuccino Tee</h2>
-                        <h3 class="indent">Form the basic tee collection, our best
-                            selling product meet the essence of italian tradition</h3>
-                        <div class="purchase-row">
-                            <div class="buy-button"
-                                onclick="window.open((country == 'Europe'?'https://amzn.eu/d/gGLJNGo':'https://a.co/d/2Nzca9a'), '_blank').focus();">
-                                <p>Buy now</p>
-                            </div>
-                            <div class="price">
-                                <p id="cappuccino-price">$23.99</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="flex width-100 main">
+        <div class="flex column max-width">
+            <div class="flex row main-container">
+                <div class="flex main-photo">
+                    <img src="../img/basic-tee-all-front.webp" alt="" width="375">
                 </div>
-            </div>
-
-            <div class="right-oriented">
-                <div class="tee" id="second-featured">
-                    <div class="main-image">
-                        <img src="../images/basic-tee-macchiato-front.png" width="450" id="macchiato"
-                            alt="Coffee Culture Macchiato Tshirt">
-                    </div>
-                    <div class="bundle">
-                        <h2 class="product-name">Macchiato Tee</h2>
-                        <h3 class="indent">The lastest Coffee Culture drop, born form
-                            the
-                            essence of minimalism</h3>
-                        <div class="purchase-row">
-                            <div class="buy-button"
-                                onclick="window.open((country == 'Europe'?'https://amzn.eu/d/08C592pA':'https://a.co/d/4JnM7a4'), '_blank').focus();">
-                                <p>Buy now</p>
-                            </div>
-                            <div class="price">
-                                <p id="macchiato-price">$23.99</p>
-                            </div>
-                        </div>
+                <div class="flex main-text">
+                    <div class="flex column align-start main-text-container">
+                        <h4>FETURED</h4>
+                        <h3>Basic Tee Collection</h3>
+                        <p>Discover the perfect balance of comfort, quality, and minimalist design with our Basic Tee
+                            Collection. Crafted from premium, breathable cotton, these tees are designed to keep you
+                            feeling
+                            fresh all day while elevating your everyday style.</p>
+                        <a href="../#shop">See more</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section"></div>
+    <div class="flex column justify-start width-100 shop" id="shop">
+        <div class="flex column max-width">
+            <div class="flex row shop-menu" id="shop-menu">
+                <h5 id="hoodie" onclick="loadShop('hoodie')">HOODIES</h5>
+                <h5 id="t-shirt" onclick="loadShop('t-shirt')" class="shop-selected">T-SHIRT</h5>
+                <h5 id="other" onclick="loadShop('other')">OTHERS</h5>
+            </div>
 
-    <div class="view-more">
-        <p class="underline-on-hoover"><a href="../shop">View other products</a></p>
-    </div>
-
-    <div class="about">
-        <div class="info">
-            <h4>Our brand</h4>
-            <p class="paragraph">
-                Coffee Culture is an Italian brand, born from a passion for perfection and a commitment to enhancing the
-                experience of clothing. Rooted in the rich heritage of Italian craftsmanship, our brand draws
-                inspiration from the timeless traditions of Italian coffee culture, where every detail is carefully
-                considered and every moment is savored. This dedication to excellence extends to our apparel, where we
-                fuse style, comfort, and quality to create clothing that feels as good as it looks. <br>
-                At Coffee Culture, we believe that clothing should do more than just cover the body, it should tell a
-                story, evoke emotions, and connect people to a deeper sense of place and tradition. Our designs reflect
-                a seamless blend of elegance and simplicity, capturing the essence of Italy's vibrant coffee culture.
-                Each piece in our collection is thoughtfully designed to enhance your everyday life, bringing a sense of
-                refinement and effortless style to your wardrobe.
-            </p>
-        </div>
-        <div class="info">
-            <h4>The tradition</h4>
-            <p class="paragraph">The timeless coffee tradition is at the heart of what inspires the Coffee Culture
-                brand. We draw from this rich heritage to design products that embrace nature's essence and celebrate
-                the art of simplicity. Our collection of basic tees exemplifies this philosophy, featuring clean colors
-                and a precise look that elevates any outfit, making it effortlessly stand out. Each basic tee is
-                thoughtfully crafted to blend comfort with style, ensuring that it becomes a staple in your wardrobe for
-                years to come. <br>
-                By keeping our graphics simple and minimal, we create designs that withstand the test of time, much like
-                the enduring legacy of the ancient Greek alphabet that we incorporate into our front phrases. This
-                minimalist approach is not only a nod to timeless aesthetics but also a tribute to the elegance and
-                sophistication found in classical forms. At Coffee Culture, we believe in creating apparel that
-                resonates with those who appreciate the subtle yet profound beauty of simplicity.
-            </p>
+            <div class="flex">
+                <div class="flex row shop-items" id="shop-items">
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="social">
-        <div class="qrcode">
-            <a href="https://www.instagram.com/coffeeculturedesign/" target="_blank" title="Coffee Culture Instagram">
-                <img src="../images/coffee-culture-instagram.png" height="300" width="300"
-                    alt="Coffee Culture Instagram">
-            </a>
-        </div>
-        <div class="follow">
-            <h4>Follow us on Instagram</h4>
-            <p class="indent">Stay updated with every drop and be the first one discover
-                our new products.</p>
-        </div>
+    <div class="flex width-100 footer" id="footer">
     </div>
 
-    <div class="footer">
-
+    <div id="cookie">
     </div>
+
 </body>
 
 </html>

@@ -1,142 +1,123 @@
-{
-    "eu": [
-        {
-            "name": "cappuccino",
-            "type": "basic tee",
-            "price": "€16.99",
-            "colors": [
-                "#492C26"
-            ],
-            "photos": [
-                "../images/basic-tee-cappucino-front.png",
-                "../images/basic-tee-cappucino-back-eu.png"
-            ],
-            "link": "https://amzn.eu/d/55fxejM"
-        },
-        {
-            "name": "macchiato",
-            "type": "basic tee",
-            "price": "€16.99",
-            "colors": [
-                "#FAFAFA"
-            ],
-            "photos": [
-                "../images/basic-tee-macchiato-front.png",
-                "../images/basic-tee-macchiato-back-eu.png"
-            ],
-            "link": "https://amzn.eu/d/12FMWl8"
-        },
-        {
-            "name": "espresso",
-            "type": "basic tee",
-            "price": "$16.99",
-            "colors": [
-                "#000000"
-            ],
-            "photos": [
-                "../images/basic-tee-espresso-front.png",
-                "../images/basic-tee-espresso-back-eu.png"
-            ],
-            "link": "https://amzn.eu/d/cOSutSM"
-        },
-        {
-            "name": "mochaccino",
-            "type": "basic tee",
-            "price": "$16.99",
-            "colors": [
-                "#C0C0C0"
-            ],
-            "photos": [
-                "../images/basic-tee-mocaccino-front.png",
-                "../images/basic-tee-mocaccino-back-eu.png"
-            ],
-            "link": "https://amzn.eu/d/eHY2BnP"
-        },
-        {
-            "name": "coffee leaf",
-            "type": "hoodie",
-            "price": "$29.99",
-            "colors": [
-                "#000000",
-                "#63666A",
-                "#9AA297"
-            ],
-            "photos": [
-                "../images/hoodie-coffee-leaf-front.png",
-                "../images/hoodie-coffee-leaf-back.png"
-            ],
-            "link": "https://amzn.eu/d/fmg7FEe"
-        }
-    ],
-    "us": [
-        {
-            "name": "cappuccino",
-            "type": "basic tee",
-            "price": "$23.99",
-            "colors": [
-                "#492C26"
-            ],
-            "photos": [
-                "../images/basic-tee-cappucino-front.png",
-                "../images/basic-tee-cappucino-back-us.png"
-            ],
-            "link": "https://a.co/d/9Uq1qlF"
-        },
-        {
-            "name": "macchiato",
-            "type": "basic tee",
-            "price": "$23.99",
-            "colors": [
-                "#FAFAFA"
-            ],
-            "photos": [
-                "../images/basic-tee-macchiato-front.png",
-                "../images/basic-tee-macchiato-back-us.png"
-            ],
-            "link": "https://a.co/d/3mjfpBa"
-        },
-        {
-            "name": "espresso",
-            "type": "basic tee",
-            "price": "$23.99",
-            "colors": [
-                "#000000"
-            ],
-            "photos": [
-                "../images/basic-tee-espresso-front.png",
-                "../images/basic-tee-espresso-back-us.png"
-            ],
-            "link": "https://a.co/d/3KwrIKT"
-        },
-        {
-            "name": "mochaccino",
-            "type": "basic tee",
-            "price": "$23.99",
-            "colors": [
-                "#C0C0C0"
-            ],
-            "photos": [
-                "../images/basic-tee-mocaccino-front.png",
-                "../images/basic-tee-mocaccino-back-us.png"
-            ],
-            "link": "https://a.co/d/6RGsnoa"
-        },
-        {
-            "name": "coffee leaf",
-            "type": "hoodie",
-            "price": "$31.99",
-            "colors": [
-                "#000000",
-                "#807E78",
-                "#154734",
-                "#63666A",
-                "#9AA297"
-            ],
-            "photos": [
-                "../images/hoodie-coffee-leaf-front.png",
-                "../images/hoodie-coffee-leaf-back.png"
-            ],
-            "link": "https://a.co/d/ikRgG3r"
-        }
-    ]
-}
+[
+  {
+    "name": "Macchiato",
+    "type": "t-shirt",
+    "collection": "basic tee",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/macchiato-front.webp"],
+    "ueLink": "https://amzn.eu/d/esB7k5J",
+    "usLink": "https://a.co/d/8qfKTLT"
+  },
+  {
+    "name": "Mochaccino",
+    "type": "t-shirt",
+    "collection": "basic tee",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mochaccino-front.webp"],
+    "ueLink": "https://amzn.eu/d/8bQUc1m",
+    "usLink": "https://a.co/d/7OjWw38"
+  },
+  {
+    "name": "Cappuccino",
+    "type": "t-shirt",
+    "collection": "basic tee",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/cappuccino-front.webp"],
+    "ueLink": "https://amzn.eu/d/clTLCiN",
+    "usLink": "https://a.co/d/8A6UWuC"
+  },
+  {
+    "name": "Espresso",
+    "type": "t-shirt",
+    "collection": "basic tee",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/espresso-front.webp"],
+    "ueLink": "https://amzn.eu/d/d3MrEFc",
+    "usLink": "https://a.co/d/eomrw05"
+  },
+  {
+    "name": "Vanilla Iced",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-white-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Caramel Iced",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-brown-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Cold Brew",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-black-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Blue Lagoon",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-babyblue-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Stone Cold",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-asphaltgrey-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Matcha Chill",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-olive-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Frosted Vanilla",
+    "type": "t-shirt",
+    "collection": "iced coffee crew",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/hgdic-silver-back.webp"],
+    "ueLink": "https://amzn.eu/d/1FTLbJ2",
+    "usLink": "https://a.co/d/dNYusrv"
+  }
+]

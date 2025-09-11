@@ -1,0 +1,37 @@
+.main {
+  min-height: 70vh;
+  background-color: #aa7c5a;
+}
+
+.main-container{
+    padding: 0 30px;
+    text-align: center;
+}
+
+.text {
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  box-shadow: inset 0px 40px 47px -22px rgba(0, 0, 0, 0.2);
+
+  p {
+    color: #653e36;
+    text-align: justify;
+  }
+}
+
+.text-container {
+  h5 {
+    padding-bottom: 30px;
+  }
+}
+
+.text-item {
+  max-width: 1000px;
+  h5 {
+    padding: 15px 0;
+  }
+  p {
+    padding-bottom: 15px;
+  }
+}

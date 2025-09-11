@@ -1,20 +1,17 @@
-let ps, cm;
-let product;
+country = Intl.DateTimeFormat().resolvedOptions().timeZone.split("/")[0];
 
-function defaultload() {
-    getNavBar('top-nav');
-    getFooter('footer');
+window.addEventListener("load", async function () {
+  await load("../components/navbar.html", "navbar");
+  await load("../components/footer.html", "footer");
 
-    if (getCookie('agree') == '') {
-        getCookieBanner('cookie-banner');
-    }
+  if (getCookie("agreement") == "") {
+    await load("../components/cookie-banner.html", "cookie");
+  }
 
-    ps = document.getElementById('page-selector');
-    cm = document.getElementById('close-menu');
-
-    document.querySelector('.menu').addEventListener('click', toggleMobileMenu);
-
-    document.querySelector('.close-menu').addEventListener('click', hideMenu);
-
-    updateCountryInfo(country);
-}
+  if (getCookie("country") == "") setCookie("country", country, 30);
+  
+  this.document.getElementById("navbar-language-img").src =
+    getCookie("country") == "Europe"
+      ? "../img/ue-flag.webp"
+      : "../img/us-flag.webp";
+});
