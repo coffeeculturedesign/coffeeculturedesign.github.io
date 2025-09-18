@@ -46,7 +46,7 @@
   {
     "name": "Vanilla Iced",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -57,7 +57,7 @@
   {
     "name": "Caramel Iced",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -68,7 +68,7 @@
   {
     "name": "Cold Brew",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -79,7 +79,7 @@
   {
     "name": "Blue Lagoon",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -90,7 +90,7 @@
   {
     "name": "Stone Cold",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -101,7 +101,7 @@
   {
     "name": "Matcha Chill",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
@@ -112,7 +112,7 @@
   {
     "name": "Frosted Vanilla",
     "type": "t-shirt",
-    "collection": "iced coffee line",
+    "collection": "iced coffee club",
     "uePrice": "€19.49",
     "usPrice": "$23.99",
     "colors": ["#492C26"],
