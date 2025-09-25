@@ -52,6 +52,9 @@
   h5{
     cursor: pointer;
   }
+  h3{
+    text-align: center;
+  }
 }
 
 .shop-selected{
