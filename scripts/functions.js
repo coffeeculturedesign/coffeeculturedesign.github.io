@@ -59,7 +59,7 @@ function loadShop(shopType) {
       });
       if (itemsFlag == 0) {
         this.document.getElementById("shop-items").innerHTML =
-          "<h3>Sorry! We are working on it.</h5>";
+          "<h3>New products are on the way. Check back soon!</h3>";
       }
     })
     .catch((err) => console.error(err));
