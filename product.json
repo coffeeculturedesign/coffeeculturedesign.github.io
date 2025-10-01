@@ -119,5 +119,104 @@
     "photos": ["../img/hgdic-silver-back.webp"],
     "ueLink": "https://amzn.eu/d/1FTLbJ2",
     "usLink": "https://a.co/d/dNYusrv"
+  },
+  {
+    "name": "Morning Brew",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-white-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Ritual Blend",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-brown-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Black Roast",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-black-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Berry Latte",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-purple-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Cinnamon Spice",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-red-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Sky Latte",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-lightblue-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Green Matcha",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-green-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Forest Brew",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-olive-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Classic Ritual",
+    "type": "t-shirt",
+    "collection": "morning rituals",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/mr-silver-back.webp"],
+    "ueLink": "https://amzn.eu/d/iq54jA0",
+    "usLink": "https://a.co/d/13NPufY"
   }
 ]
