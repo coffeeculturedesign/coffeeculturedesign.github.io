@@ -65,16 +65,19 @@
 .faq-item {
   max-width: 1000px;
   overflow: hidden;
-  cursor: pointer;
   img {
     transform: rotate(180deg);
     transition: transform 0.35s;
   }
   h5 {
     padding: 15px 0;
+    cursor: pointer;
   }
   p {
     padding-bottom: 15px;
+  }
+  a {
+    color: #aa7c5a;
   }
 }
 
@@ -84,7 +87,8 @@
   transform: translateY(-4px);
   overflow: hidden;
   padding-bottom: 0;
-  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease, padding-bottom 0.35s ease;
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease,
+    padding-bottom 0.35s ease;
 }
 
 .faq-item.open p {
@@ -93,7 +97,8 @@
   transform: translateY(0);
   overflow: hidden;
   padding-bottom: 15px;
-  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease, padding-bottom 0.35s ease;
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease,
+    padding-bottom 0.35s ease;
 }
 
 .faq-item.open h5 img {
