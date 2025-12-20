@@ -218,5 +218,93 @@
     "photos": ["../img/mr-silver-back.webp"],
     "ueLink": "https://amzn.eu/d/iq54jA0",
     "usLink": "https://a.co/d/13NPufY"
+  },
+  {
+    "name": "Milk Foam",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-white.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Roasted Cocoa",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-brown.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Midnight Roast",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-black.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Plum Latte",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-purple.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Cinnamon Brick",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-red.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Iced Sky",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-babyblue.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Olive Brew",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-olive.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
+  },
+  {
+    "name": "Oat Milk",
+    "type": "t-shirt",
+    "collection": "signature",
+    "uePrice": "€19.49",
+    "usPrice": "$23.99",
+    "colors": ["#492C26"],
+    "photos": ["../img/logo-silver.webp"],
+    "ueLink": "https://amzn.eu/d/7RkCwGN",
+    "usLink": "https://a.co/d/i2Ehaek"
   }
 ]
